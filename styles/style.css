@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    flex-direction: row;
+}
+/*----------Listas Izquierdas----------------------------*/
+.cotLisIzq ul{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+.cotLisIzq h6{
+    margin-top: 0;
+}
+.cotLisIzq li{
+    margin-top: 200px;
+}
+
+/*--------------------centro----------------------------*/
+#imgPrin{
+    margin-top: 30vh;
+    width: 30vh;
+}
+
+
+/*-------------Listas Derecha---------------------------*/
+.cotLisDe ul{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%; 
+}
+.cotLisDe li{
+    margin-top: 200px;
+}
+/*
+font-family: 'Climate Crisis', cursive;
+font-family: 'Luckiest Guy', cursive;
+*/
