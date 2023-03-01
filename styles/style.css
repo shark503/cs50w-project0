@@ -1,29 +1,69 @@
 body{
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: row;
+    background-image: linear-gradient(to top, #5e6066, #515459, #45474c, #393c3f, #2e3033, #2e3033, #2e3033, #2e3033, #393c3f, #45474c, #515459, #5e6066);    /*background-color:#2f2d2f;*/
+   
 }
-/*----------Listas Izquierdas----------------------------*/
+
+/*----------------------------------------------Listas Izquierdas-------------------------------------------------*/
+
 .cotLisIzq ul{
+    color: white;
     list-style-type: none;
     margin: 0%;
     padding: 0%;
 }
+.cotLisIzq a{
+    color: white;
+    text-decoration:none;
+}
 .cotLisIzq h6{
-    margin-top: 0;
+    color: whitesmoke;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
 }
 .cotLisIzq li{
-    margin-top: 200px;
+    margin-top: 15vh;
+    margin-left: 5px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
 }
 
-/*--------------------centro----------------------------*/
+
+/*------------------------------------------------------centro--------------------------------------------------*/
+
 #imgPrin{
     margin-top: 30vh;
-    width: 30vh;
+    width: 27vh;
+}
+.spans span{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 40px;
+    color: whitesmoke;
+    position: absolute;
+
+}
+#span1{
+    margin-top: 28vh;
+    margin-left: 5vh;
+}
+#span2{
+    margin-top: 28vh;
+    margin-left: 17vh;
+}
+#span3{
+    margin-top: 47vh;
+    margin-left: 3vh;
 }
 
-
-/*-------------Listas Derecha---------------------------*/
+/*-----------------------------------------------Listas Derecha-------------------------------------------------*/
 .cotLisDe ul{
+    color: whitesmoke;
     list-style-type: none;
     margin: 0%;
     padding: 0%; 
@@ -31,7 +71,19 @@ body{
 .cotLisDe li{
     margin-top: 200px;
 }
+.cotLisDe li{
+    margin-top: 25vh;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+.cotLisDe a{
+     color: white;
+    text-decoration:none;
+}
 /*
+
 font-family: 'Climate Crisis', cursive;
 font-family: 'Luckiest Guy', cursive;
 */
