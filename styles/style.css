@@ -3,8 +3,7 @@ body{
     margin: 0;
     display: flex;
     flex-direction: row;
-    background-image: linear-gradient(to top, #5e6066, #515459, #45474c, #393c3f, #2e3033, #2e3033, #2e3033, #2e3033, #393c3f, #45474c, #515459, #5e6066);    /*background-color:#2f2d2f;*/
-   
+    justify-content: center;
 }
 
 /*----------------------------------------------Listas Izquierdas-------------------------------------------------*/
@@ -25,6 +24,11 @@ body{
     margin-left: 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.cotLisIzq h6:hover{
+    transition: 1s linear;
+    text-shadow:2px 2px 4px orange;
 }
 .cotLisIzq li{
     margin-top: 15vh;
@@ -32,8 +36,22 @@ body{
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    border-radius: 4px;
 }
-
+.temp1Li:hover{
+    transition: 1s linear;
+    box-shadow: 5px 1px 14px 2px #8bb9dd;
+}
+.temp2Li:hover{
+    transition: 1s linear;
+    box-shadow: 5px 1px 8px 4px #825438;
+}
+.temp3Li:hover{
+    transition: 1s linear;
+    box-shadow: 5px 1px 14px 2px #fce903;
+}
 
 /*------------------------------------------------------centro--------------------------------------------------*/
 
@@ -58,7 +76,30 @@ body{
 }
 #span3{
     margin-top: 47vh;
-    margin-left: 3vh;
+    margin-left: 5vh;
+}
+/*--------------------------texto-----------------------------*/
+.text{
+    margin-top: 5vh;
+    margin-left: 34px;
+    padding: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    overflow-y:visible;
+    width: 25vh;
+    height: 40vh;
+}
+#collapseTwo{
+    background-color: #45474c;
+}
+.accordion-body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: whitesmoke;
+}
+.accordion-item button{
+    color: whitesmoke;
+    background-color: #515459;
 }
 
 /*-----------------------------------------------Listas Derecha-------------------------------------------------*/
@@ -77,13 +118,146 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     color: white;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+}
+.cotLisDe li:hover{
+    transition: 1s linear;
+    box-shadow: 5px 1px 14px 2px rgb(56, 240, 11);
 }
 .cotLisDe a{
-     color: white;
+    color: white;
     text-decoration:none;
 }
-/*
+/*----------------------------Html Personajes centro------------------------------------------------*/
+.cotCentroPers{
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    overflow-y:visible;
+    width: 40vh;
+    height: 80vh;
+    justify-items: center;
+}
+.cotCentroPers h3{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 2px 4px black;
+}
+.card-body{
+    height: 150px;
+    overflow: scroll;
+    scrollbar-width: thin;
+}
+img.card-img-top {
+    width: 150px;
+    height: 150px;
+    margin-left: 18px;
+}
+.card{
+    margin-top: 5px;
+}
+.card-personalizada{
+    width: 12rem;
+    height: 8px;
+}
 
+/*-----------------------------HTML Centro Premios---------------------------*/
+
+.cotCentroPrem{
+    overflow: hidden;
+    overflow-y:visible;
+    width: 40vh;
+    height: 80vh;
+    justify-items: center;
+    text-align: center;
+}
+.cotCentroPrem td{
+    color: white;
+}
+.table-success td{
+    color:black;
+    font-weight: bold;
+}
+/*-----------------------------------------HTML Centro Libro Uno-----------------------------------------------------------*/
+#span1T1{
+    margin-top: 24vh;
+    margin-left: 7vh;
+}
+#span3T1{
+    margin-top: 47vh;
+    margin-left: 10vh;
+}
+#collapseThree{
+    background-color: #00AAE4;
+}
+
+#acordionAgua{
+
+    background-color: #00AAE4;
+}
+/*-----------------------------------------HTML Centro Libro Dos-----------------------------------------------------------*/
+#span1T2{
+    margin-top: 24vh;
+    margin-left: 7vh;
+}
+#span2T2{
+    margin-top: 58vh;
+    margin-left: 8vh;
+}
+#collapseFour{
+    background-color: #D9C5BF;
+
+}
+#acordionTierra{
+    color: #000000;
+    font-weight:500;
+    background-color: #D9C5BF;
+}
+#AcorditxtTierra{
+    color: #000000;
+}
+/*-----------------------------------------HTML Centro Libro Tres-----------------------------------------------------------*/
+#imgPrin3{
+    margin-top: 30vh;
+    width: 27vh;
+    margin-left: 3vh;
+}
+#span1T3{
+    margin-top: 24vh;
+    margin-left: 7vh;
+    color:#000000;
+}
+#span2T3{
+    margin-top: 52vh;
+    margin-left: 8vh;
+    color:#000000;
+}
+#collapseFive{
+    background-color: #FCD090;
+
+}
+#acordionFuego{
+    color: #000000;
+    font-weight:500;
+    background-color: #FCD090;
+}
+#AcorditxtTierra{
+    color: #000000;
+}
+/*-------------------------------------------------------Izq Fuego------------------------------------------------------*/
+
+.cotLisIzqT3 a{
+    color: black;
+    text-decoration:none;
+}
+#listDer3 a{
+    color: #000000;
+}
+/*
 font-family: 'Climate Crisis', cursive;
 font-family: 'Luckiest Guy', cursive;
 */
