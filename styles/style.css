@@ -55,7 +55,7 @@ body{
 
 /*------------------------------------------------------centro--------------------------------------------------*/
 
-#imgPrin{
+#imgPrini{
     margin-top: 30vh;
     width: 27vh;
 }
@@ -79,16 +79,6 @@ body{
     margin-left: 5vh;
 }
 /*--------------------------texto-----------------------------*/
-.text{
-    margin-top: 5vh;
-    margin-left: 34px;
-    padding: 15px;
-    border-radius: 15px;
-    overflow: hidden;
-    overflow-y:visible;
-    width: 25vh;
-    height: 40vh;
-}
 #collapseTwo{
     background-color: #45474c;
 }
@@ -183,6 +173,11 @@ img.card-img-top {
     font-weight: bold;
 }
 /*-----------------------------------------HTML Centro Libro Uno-----------------------------------------------------------*/
+#imgPrin1{
+    margin-top: 30vh;
+    width: 28vh;
+    margin-left: 3vh;
+}
 #span1T1{
     margin-top: 24vh;
     margin-left: 7vh;
@@ -200,12 +195,17 @@ img.card-img-top {
     background-color: #00AAE4;
 }
 /*-----------------------------------------HTML Centro Libro Dos-----------------------------------------------------------*/
+#imgPrin2{
+    margin-top: 30vh;
+    width: 28vh;
+    margin-left: 3vh;
+}
 #span1T2{
     margin-top: 24vh;
     margin-left: 7vh;
 }
 #span2T2{
-    margin-top: 58vh;
+    margin-top: 59vh;
     margin-left: 8vh;
 }
 #collapseFour{
@@ -229,12 +229,12 @@ img.card-img-top {
 #span1T3{
     margin-top: 24vh;
     margin-left: 7vh;
-    color:#000000;
+    color:white;
 }
 #span2T3{
     margin-top: 52vh;
     margin-left: 8vh;
-    color:#000000;
+    color:white;
 }
 #collapseFive{
     background-color: #FCD090;
@@ -251,13 +251,10 @@ img.card-img-top {
 /*-------------------------------------------------------Izq Fuego------------------------------------------------------*/
 
 .cotLisIzqT3 a{
-    color: black;
+    color: white;
     text-decoration:none;
 }
 #listDer3 a{
-    color: #000000;
+    color: white;
 }
-/*
-font-family: 'Climate Crisis', cursive;
-font-family: 'Luckiest Guy', cursive;
-*/
+
