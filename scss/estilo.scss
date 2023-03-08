@@ -24,11 +24,16 @@ $TamImgPerso: 540px;
 .textLibro3{
     @extend .text;
 }
+
 //-----------------------------------Query index-----------------------------------------
 #imgPrini{
     @include tablet{ 
-        margin-top: $MargenImgCent+15;
-        width:$AnchoImgCent+10;
+        margin-top: $MargenImgCent+18;
+        width:$AnchoImgCent+5;
+    }
+    @include pc1{
+        margin-top: $MargenImgCent+8;
+        width:$AnchoImgCent+25;
     }
 }
 #span1{
@@ -37,6 +42,11 @@ $TamImgPerso: 540px;
         margin-left: 12vh;
         font-size: 60px;
     }
+    @include pc1{
+        margin-top: 20vh;
+        margin-left: 15vh;
+        font-size: 70px;
+    }
 }
 #span2{
     @include tablet{ 
@@ -44,12 +54,22 @@ $TamImgPerso: 540px;
         margin-left: 28vh;
         font-size: 60px;
     }
+    @include pc1{
+        margin-top: 20vh;
+        margin-left: 38vh;
+        font-size: 70px;
+    }
 }
 #span3{
     @include tablet{
         margin-top: 62vh;
         margin-left: 10vh;
         font-size: 60px;
+    }
+    @include pc1{
+        margin-top: 63vh;
+        margin-left: 12vh;
+        font-size: 70px;
     }
 }
 .text{
@@ -60,12 +80,20 @@ $TamImgPerso: 540px;
         margin-top: 8vh;
 
     }
+    @include pc1{
+        width: 42vh;
+    }
 }
 //-----------------------------------Query libro 1-----------------------------------------
 #imgPrin1{
     @include tablet{ 
         margin-top: $MargenImgCent+5;
         width: $AnchoImgCent+10;
+    }
+    @include pc1{
+        margin-top: $MargenImgCent+8;
+        width:$AnchoImgCent+30;
+        margin-left: 0;
     }
 }
 #span1T1{
@@ -74,12 +102,22 @@ $TamImgPerso: 540px;
         margin-left: 17vh;
         font-size: 60px;
     }
+    @include pc1{
+        margin-top: 12vh;
+        margin-left: 15vh;
+        font-size: 100px;
+    }
 }
 #span3T1{
     @include tablet{
         margin-top: 55vh;
         margin-left: 18vh;
         font-size: 60px;
+    }
+    @include pc1{
+        margin-top: 70vh;
+        margin-left: 25vh;
+        font-size: 70px;
     }
 }
 #accordionExample1{
@@ -90,12 +128,24 @@ $TamImgPerso: 540px;
         margin-top: 8vh;
     }
 }
+.textLibro1{
+    @include pc1{
+        width: 52vh;
+        margin-left: 8vh;
+    }
+}
 
 //------------------------------------Query libro 2--------------------------------------------
 #imgPrin2{
     @include tablet{ 
         margin-top: $MargenImgCent;
         width: $AnchoImgCent;
+    }
+    @include pc1{
+        margin-top: $MargenImgCent;
+        width:$AnchoImgCent+20;
+        height: 50vh;
+        margin-left: 0;
     }
 }
 #span1T2{
@@ -104,12 +154,22 @@ $TamImgPerso: 540px;
         margin-left: 7vh;
         font-size: 60px;
     }
+    @include pc1{
+        margin-top: 5vh;
+        margin-left: 5vh;
+        font-size: 100px;
+    }
 }
 #span2T2{
     @include tablet{ 
         margin-top: 61vh;
         margin-left: 10vh;
         font-size: 60px;
+    }
+    @include pc1{
+        margin-top: 65vh;
+        margin-left: 10vh;
+        font-size: 100px;
     }
 }
 
@@ -119,6 +179,10 @@ $TamImgPerso: 540px;
         height: 24vh;
         margin-left: 4vh;
         margin-top: 8vh;
+    }
+    @include pc1{
+        width: 40vh;
+        margin-left: 6vh;
     }
 }
 .cotLisDe{
@@ -137,12 +201,28 @@ $TamImgPerso: 540px;
     @extend .cotLisDe;
     
 }
-//------------------------------------Query libro 2--------------------------------------------
+//------------------------------------Query libro 3--------------------------------------------
 #imgPrin3{
-    @extend #imgPrin1;
+    @include tablet{ 
+        margin-top: $MargenImgCent+5;
+        width: $AnchoImgCent+10;
+    }
+    @include pc1{
+        margin-top: $MargenImgCent;
+        width: $AnchoImgCent+20;
+    }
 }
 #span1T3{
-   @extend #span1T1;
+    @include tablet{ 
+        margin-top: 12vh;
+        margin-left: 17vh;
+        font-size: 60px;
+    }
+    @include pc1{
+        margin-top: 7vh;
+        margin-left: 12vh;
+        font-size: 100px;
+    }
 }
 #span2T3{
     @include tablet{
@@ -150,24 +230,32 @@ $TamImgPerso: 540px;
         margin-left: 18vh;
         font-size: 60px;
     }
+    @include pc1{
+        margin-top: 65vh;
+        margin-left: 14vh;
+        font-size: 100px;
+    }
 }
-
-
-
-
-
-
-
-
-
+.textLibro3{
+    @include pc1{
+        width: 40vh;
+        margin-left: 10vh;
+    }
+}
 //------------------------------------query Personajes----------------------------------
 .cotCentroPers{
     @include tablet{
         grid-template-columns: 1fr 1fr;
         width: 50vh;
         height: 90vh;
-        
     }  
+    @include pc{
+        all:unset;
+        margin: 0px 20px;
+        height:100vh;
+        overflow: hidden;
+        overflow-y:visible;
+    }
 }
 .cotCentroPers h3{
     @include tablet{
@@ -177,23 +265,84 @@ $TamImgPerso: 540px;
        font-weight: bold;
        text-shadow: 2px 2px rgb(140, 207, 16);
     }
+    @include pc{
+        margin-top: 5px;
+        color: white;
+        text-align: center;
+        font-size: 35px;
+        text-shadow: 2px 4px black;
+    }
  }
 #divh3{
     @include tablet{
         background-color: whitesmoke;
         border-radius:25px ;
         margin-top: 5px;
-        width: 12rem;
-        height: 30vh;
+        height: 37vh;
         border-width: 10px;
         border-color: black;
         border-style: double;
      }
 }
+
+#divh3{
+    @include pc{
+        all:unset;
+    }
+}
+.card-personalizada {
+   @extend #divh3;
+
+}
+img.card-img-top {
+    @include pc{
+        all:unset;
+        max-width: 240px;;
+    }
+}
+.card-body{
+    @include pc{
+        text-align: left;
+        margin-left: 10vh;
+        margin-top: 2vh;
+        max-width: 400px;
+    }
+}
+
 //------------------------------------query Premios----------------------------------
 .cotCentroPrem{
     @include tablet{
        margin: 20px;
        width: 80vh;
+     }
+     @include pc{
+        height: 95vh;
+     }
+     tr{
+        @include pc{
+            height: 8vh;
+         }
+    }
+}
+//-------------------------------------li query-------------------------------------
+body {
+    @include pc{
+       justify-content:space-between;
+    }
+}
+.cotLisIzq{
+    @include pc1{
+        margin-left: 15vh;
+        height: 100vh;
+    }
+    li{
+        @include pc1{
+            margin-top: 20vh;
+        }
+    }
+}
+.cotLisDe{
+    @include pc1{
+        margin-right: 15vh;
      }
 }
